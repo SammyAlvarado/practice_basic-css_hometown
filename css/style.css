@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    color: rgb(112, 112, 112);
+    font-size: 50px;
+}
+
+h2 {
+
+}
+
+
+
+.main-title {
+    color: rgb(112, 112, 112);
+    font-size: 23px;
+}
+
+.main-header {
+    background-image: url(https://voiceofoc.org/wp-content/uploads/2018/05/Santa-Ana-water-tower-1170x658.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: royalblue;
+}
+
+#main-footer {
+    background-color: slategrey;
+    border-bottom: orange 10px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#main-footer p {
+    color: white;
+}
+
+#main-footer a:link {
+    color: lightsalmon;
+}
+
+.wrapper {
+    text-align: center;
+}
