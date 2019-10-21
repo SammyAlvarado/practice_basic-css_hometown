@@ -4,18 +4,22 @@ body {
 
 h1 {
     color: rgb(112, 112, 112);
-    font-size: 50px;
+     font-size: 4.375em;   /* 70/16 */
 }
 
 h2 {
+    font-size: 1.5625rem;  /* 25/16 */
+}
 
+h3 {
+    font-size: 1.125rem;     /* 18/16 */
 }
 
 
 
 .main-title {
     color: rgb(112, 112, 112);
-    font-size: 23px;
+    font-size: 1.4375em;
 }
 
 .main-header {
@@ -41,6 +45,26 @@ h2 {
     color: lightsalmon;
 }
 
-.wrapper {
+/* .main-content {
+    
+} */
+
+.lifestyle-options {
+    list-style-type: none;
+}
+
+.container {
+    margin: auto;
+    width: 60%;
     text-align: center;
+}
+
+.content-styler {
+    line-height: 30px;
+}
+
+.main-content {
+    background-color: rgb(135, 202, 223);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
