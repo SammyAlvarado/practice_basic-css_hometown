@@ -15,14 +15,26 @@ h3 {
     font-size: 1.125rem;     /* 18/16 */
 }
 
+p {
+    font-size: 1.113rem;
+    color: rgb(85, 85, 85);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 
 .main-title {
     color: #fffaf0;
-    font-size: 1.4375em;
+    font-size: 1.4375rem;
+    margin-top: .5%;
 }
 
 .main-header {
+    text-align: center;
+    background-color: darkgrey;
+}
+
+/* .main-header {
     background-image: 
     linear-gradient(to bottom,rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
     url(https://voiceofoc.org/wp-content/uploads/2018/05/Santa-Ana-water-tower-1170x658.jpg);
@@ -30,17 +42,16 @@ h3 {
     background-position: center;
     background-size: 100%;
     background-color: royalblue;
+} */
+
+.main-content {
+    background-image: url(https://www.ocregister.com/wp-content/uploads/migration/nnc/nncdcm-4thstreetcollage1.jpg?w=535);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: white;
 }
 
-.main-header {
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.main-content img {
-    padding: 30px 0;
-}
 
 .container {
     padding-top: 30px;
@@ -76,11 +87,24 @@ h3 {
 }
 
 .content-styler {
-    line-height: 30px;
+    line-height: 1.5;
 }
 
 .main-content {
     background-color: rgb(135, 202, 223);
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+.top-line {
+    border-top: gray 1px solid;
+}
+
+.button {
+    font-weight: bold;
+    font-size: 1.4375rem;
+    color: coral;
+    border-bottom: 1px solid green;
+    text-transform: capitalize;
 }
