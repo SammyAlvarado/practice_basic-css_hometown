@@ -1,3 +1,10 @@
+/* ----------------- Universal Rules  ------------------ */
+* {
+  box-sizing: border-box;  
+}
+
+/* ----------------- Basic Sizing & Styling ------------------ */
+/* ----------------- (To html tags only)------------------ */
 body {
     margin: 0;
 }
@@ -16,11 +23,18 @@ h3 {
 }
 
 p {
+    padding: 0 5%;
     font-size: 1.113rem;
-    color: rgb(85, 85, 85);
     font-family: Arial, Helvetica, sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
+
+/* --------------------------- Containers ----------------------------
+----------------- (Sizing rules to Classes & Ids)------------------ */
 
 
 .main-title {
@@ -29,50 +43,15 @@ p {
     margin-top: .5%;
 }
 
+
 .main-header {
     text-align: center;
     background-color: darkgrey;
 }
 
-.main-header {
-    background-image: 
-    linear-gradient(to bottom,rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
-    url(https://www.thepinnaclelist.com/wp-content/uploads/2016/05/laguna-beach-orange-county-california-home-vibrant-artistic-community.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    background-color: rgb(219, 186, 124);
-    height: 880px;
-}
-
-
 
 .container {
     padding-top: 30px;
-}
-
-#main-footer {
-    background-color: slategrey;
-    border-bottom: orange 10px solid;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-#main-footer p {
-    color: white;
-}
-
-#main-footer a:link {
-    color: lightsalmon;
-}
-
-/* .main-content {
-    
-} */
-
-.lifestyle-options {
-    list-style-type: none;
 }
 
 .container {
@@ -85,19 +64,51 @@ p {
     line-height: 1.5;
 }
 
-.main-content {
-    background-color: rgb(82, 82, 82);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 30px;
+.hero-arrow {
+    width: 3%;
 }
 
-.main-content h2,
-h3 {
+
+#main-footer {
+    background-color: slategrey;
+    border-bottom: orange 10px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+
+/* -------------------------- Container styles  ----------------------- */
+/* ----------------- (Styling rules to Classes & Ids)------------------ */
+
+
+.main-header {
+    background-image: 
+    linear-gradient(to bottom,rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url(https://www.thepinnaclelist.com/wp-content/uploads/2016/05/laguna-beach-orange-county-california-home-vibrant-artistic-community.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: rgb(219, 186, 124);
+    height: 880px;
+    max-width: 100%;
+}
+
+
+#main-footer p {
     color: white;
 }
 
-.main-content p {
+#main-footer a:link {
+    color: lightsalmon;
+}
+
+.lifestyle-options {
+    list-style-type: none;
+}
+
+.main-content {
     color:white;
 }
 
@@ -109,6 +120,18 @@ h3 {
     border-top: gray 1px solid;
 }
 
+.main-content {
+    background-color: rgb(82, 82, 82);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-top: 2px solid orange;
+}
+
+.hero-arrow {
+    max-width: 100%;
+}
+
 .button {
     font-weight: bold;
     font-size: 1.4375rem;
@@ -116,3 +139,7 @@ h3 {
     border-bottom: 1px solid green;
     text-transform: capitalize;
 }
+
+
+/* -------------------------- Media Quries   ----------------------- */
+/* ----------------- (Multi screen sizing and styling)------------------ */
