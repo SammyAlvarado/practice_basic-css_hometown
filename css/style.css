@@ -37,21 +37,31 @@ img {
 ----------------- (Sizing rules to Classes & Ids)------------------ */
 
 
-.main-title {
-    color: #fffaf0;
-    font-size: 1.4375rem;
-    margin-top: .5%;
-}
-
 
 .main-header {
     text-align: center;
     background-color: darkgrey;
+    height: 890px;
+    max-width: 100%;
+    padding-top: 10%;
 }
 
+.hero-arrow {
+    padding-top: 2%;
+    max-width: 100%;
+    width: 3%;
+    position: relative;
+    animation: hero-arrow 2s ease-in-out 0s infinite;
+}
+
+.main-title {
+    color: #fffaf0;
+    font-size: 1.4375rem;
+}
 
 .container {
     padding-top: 30px;
+    line-height: 1.5;
 }
 
 .container {
@@ -60,14 +70,14 @@ img {
     text-align: center;
 }
 
-.content-styler {
-    line-height: 1.5;
+.first-content {
+    padding: 5% 0;
 }
 
-.hero-arrow {
-    width: 3%;
+.main-content img {
+    width: 60%;
+    padding-top: 2%;
 }
-
 
 #main-footer {
     background-color: slategrey;
@@ -91,8 +101,6 @@ img {
     background-position: center;
     background-size: 100%;
     background-color: rgb(219, 186, 124);
-    height: 880px;
-    max-width: 100%;
 }
 
 
@@ -125,11 +133,7 @@ img {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 30px;
-    border-top: 2px solid orange;
-}
-
-.hero-arrow {
-    max-width: 100%;
+    border-top: 40px solid orange;
 }
 
 .button {
@@ -140,6 +144,24 @@ img {
     text-transform: capitalize;
 }
 
+/* -------------------------- Pseudo-class  ----------------------- */
+/* ----------------- (Pseduo ruls for leaks & html tags)------------------ */
+
 
 /* -------------------------- Media Quries   ----------------------- */
 /* ----------------- (Multi screen sizing and styling)------------------ */
+
+
+
+
+/* -------------------------- keyframes Rules   ----------------------- */
+/* ----------------- (Multi screen sizing and styling)------------------ */
+/* look at line 54 */
+@keyframes hero-arrow {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(100%);
+    }
+  }
