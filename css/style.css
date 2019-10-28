@@ -12,6 +12,20 @@ body {
 h1 {
     color: #fffaf0;
      font-size: 4.375rem;   /* 70/16 */
+     font-weight: normal;
+     text-transform: uppercase;
+     text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 
 h2 {
@@ -40,7 +54,6 @@ img {
 
 .main-header {
     text-align: center;
-    background-color: darkgrey;
     height: 890px;
     max-width: 100%;
     padding-top: 10%;
@@ -56,31 +69,41 @@ img {
 
 .main-title {
     color: #fffaf0;
-    font-size: 1.4375rem;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 
-.container {
-    padding-top: 30px;
-    line-height: 1.5;
-}
 
 .container {
     margin: auto;
     width: 60%;
     text-align: center;
+    padding-top: 30px;
+    line-height: 1.5;
 }
 
-.first-content {
-    padding: 5% 0;
-}
 
 .main-content img {
     width: 60%;
     padding-top: 2%;
 }
 
+
+
 #main-footer {
-    background-color: slategrey;
+    background-color: rgb(82, 82, 82);
     border-bottom: orange 10px solid;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -94,13 +117,9 @@ img {
 
 
 .main-header {
-    background-image: 
-    linear-gradient(to bottom,rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
-    url(https://www.thepinnaclelist.com/wp-content/uploads/2016/05/laguna-beach-orange-county-california-home-vibrant-artistic-community.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    background-color: rgb(219, 186, 124);
+    background: rgb(219, 186, 124) url('../img/southern-california-pier.jpg') no-repeat center;
+    background-size: cover;
+    /* linear-gradient: to bottom,rgba(245, 246, 252, 0.52), rgba(117, 83, 19, 0.73); */
 }
 
 
@@ -108,12 +127,12 @@ img {
     color: white;
 }
 
-#main-footer a:link {
-    color: lightsalmon;
-}
-
 .lifestyle-options {
     list-style-type: none;
+}
+
+.content-img {
+    padding: 5% 0 5% 0;
 }
 
 .main-content {
@@ -126,6 +145,8 @@ img {
 
 .top-line {
     border-top: gray 1px solid;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .main-content {
@@ -140,13 +161,45 @@ img {
     font-weight: bold;
     font-size: 1.4375rem;
     color: coral;
-    border-bottom: 1px solid green;
+    border-bottom: 5px dotted orange;
     text-transform: capitalize;
 }
+
+/* -------------------------- Float ruls  ----------------------- */
+/* ----------------- (Float rules & html tags)------------------ */
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.tips,
+.sites {
+    width: 40%;
+}
+
+.tips {
+    float: right;
+}
+
+.sites {
+    float: left;
+}
+
 
 /* -------------------------- Pseudo-class  ----------------------- */
 /* ----------------- (Pseduo ruls for leaks & html tags)------------------ */
 
+a:link {
+    text-decoration: none;
+}
+
+
+#main-footer a:link {
+    color: lightsalmon;
+}
 
 /* -------------------------- Media Quries   ----------------------- */
 /* ----------------- (Multi screen sizing and styling)------------------ */
